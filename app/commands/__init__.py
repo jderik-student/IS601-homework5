@@ -18,7 +18,7 @@ class Command(ABC):
 
             @param user_input: a list of Decimals specified by the user, expectation is that there should be either zero or two elements in the list
         """
-        pass
+        pass # pragma: no cover
 
 class CommandHandler:
     """
@@ -52,9 +52,8 @@ class CommandHandler:
             @param user_input: User command line input, with each value stored in its own element
         """
         try:
-            self.commands[user_input[0]].execute([Decimal(string) for string in user_input[1:3]])
-        except TypeError:
-            print("ERROR Usage: <operation> <number1> <number2>")
+            if user_input:
+                self.commands[user_input[0]].execute([Decimal(string) for string in user_input[1:3]])
         except IndexError:
             print("ERROR Usage: <operation> <number1> <number2>")
         except ValueError:
@@ -64,4 +63,4 @@ class CommandHandler:
         except KeyError:
             print(f"No such command: {user_input[0]}")
         except Exception as e: # Catch-all for unexpected errors
-            print(f"An error occurred: {e}")
+            print(f"An error occurred: {e}") # pragma: no cover
