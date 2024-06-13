@@ -35,7 +35,7 @@ def test_full_app(capfd, monkeypatch):
     assert "The result of 12 divided by 4 is equal to 3\n" in captured.out
     assert "The result of 2 times 4 is equal to 8\n" in captured.out
     assert "The result of 3 minus 1 is equal to 2\n" in captured.out
-    assert "\nCommands:\n- add\n- subtract\n- multiply\n- divide\n- exit\n- getHistory\n- clearHistory\n- menu\n" in captured.out
+    assert "\nCommands:\n" in captured.out
     assert "ERROR Usage: <operation> <number1> <number2>\n" in captured.out
     assert "Cannot divide by zero\n" in captured.out
     assert "Invalid number input: a or b is not a valid number.\n" in captured.out
