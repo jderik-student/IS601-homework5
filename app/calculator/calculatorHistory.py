@@ -5,7 +5,7 @@
 """
 
 from typing import List
-from calculator.calculation import Calculation
+from app.calculator.calculation import Calculation
 
 class CalculatorHistory:
     """

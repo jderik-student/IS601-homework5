@@ -6,9 +6,9 @@
 
 from decimal import Decimal
 from typing import Callable
-from calculator.calculatorHistory import CalculatorHistory
-from calculator.calculation import Calculation
-from calculator.operations import add, subtract, multiply, divide
+from app.calculator.calculatorHistory import CalculatorHistory
+from app.calculator.calculation import Calculation
+from app.calculator.operations import add, subtract, multiply, divide
 
 class Calculator:
     """
