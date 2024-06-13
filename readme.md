@@ -16,10 +16,10 @@
 python main.py
 
 ## REPL Commands
-1. add <operand1> <operand2>
-2. subtract <operand1> <operand2>
-3. multiply <operand1> <operand2>
-4. divide <operand1> <operand2>
+1. add \<operand1\> \<operand2\>
+2. subtract  \<operand1\> \<operand2\>
+3. multiply  \<operand1\> \<operand2\>
+4. divide  \<operand1\> \<operand2\>
 5. getHistory
 6. clearHistory
 7. menu
