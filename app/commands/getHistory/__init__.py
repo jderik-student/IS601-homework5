@@ -17,10 +17,7 @@ class GetHistoryCommand(Command):
 
             @param user_input: not used by this method, added to adhere to Liskov substitution principle
         """
-        try:
-            i = 1
-            for calc in CalculatorHistory.get_history():
-                print(f"{i}) {calc}")
-                i += 1
-        except Exception as e: # Catch-all for unexpected errors
-            print(f"An error occurred: {e}")
+        i = 1
+        for calc in CalculatorHistory.get_history():
+            print(f"{i}) {calc}")
+            i += 1

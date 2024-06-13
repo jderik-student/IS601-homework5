@@ -19,7 +19,4 @@ class ClearHistoryCommand(Command):
 
             @param user_input: not used by this method, added to adhere to Liskov substitution principle
         """
-        try:
-            CalculatorHistory.delete_history()
-        except Exception as e: # Catch-all for unexpected errors
-            print(f"An error occurred: {e}")
+        CalculatorHistory.delete_history()
