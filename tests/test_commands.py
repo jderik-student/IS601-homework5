@@ -7,13 +7,13 @@ from decimal import Decimal
 import pytest
 
 from app.commands import CommandHandler
-from app.commands.add import AddCommand
-from app.commands.subtract import SubtractCommand
-from app.commands.multiply import MultiplyCommand
-from app.commands.divide import DivideCommand
-from app.commands.getHistory import GetHistoryCommand
-from app.commands.clearHistory import ClearHistoryCommand
-from app.commands.menu import MenuCommand
+from app.plugins.add import AddCommand
+from app.plugins.subtract import SubtractCommand
+from app.plugins.multiply import MultiplyCommand
+from app.plugins.divide import DivideCommand
+from app.plugins.getHistory import GetHistoryCommand
+from app.plugins.clearHistory import ClearHistoryCommand
+from app.plugins.menu import MenuCommand
 from app.calculator.calculation import Calculation
 from app.calculator.calculatorHistory import CalculatorHistory
 from app.calculator.operations import add, subtract, multiply, divide

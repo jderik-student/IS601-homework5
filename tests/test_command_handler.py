@@ -4,8 +4,8 @@
 '''
 
 from app.commands import CommandHandler
-from app.commands.add import AddCommand
-from app.commands.divide import DivideCommand
+from app.plugins.add import AddCommand
+from app.plugins.divide import DivideCommand
 
 def test_register_command_and_list_command(capfd):
     """Tests registering a command to the CommandHandler and listing out all the registered commands"""
