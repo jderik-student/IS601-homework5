@@ -36,6 +36,14 @@ class CommandHandler:
         """
         self.commands[command_name] = command
 
+    def list_commands(self):
+        """
+            Prints all the commands registered in the CommandHandler
+        """
+        print("Commands:")
+        for key in self.commands:
+            print(f"- {key}")
+
     def execute_command(self, user_input: List[str]):
         """
             Based on user input from the REPL, will call the method associated with the command specified by the user with any user defined arguments

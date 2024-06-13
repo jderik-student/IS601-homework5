@@ -11,6 +11,7 @@ from app.commands.multiply import MultiplyCommand
 from app.commands.divide import DivideCommand
 from app.commands.getHistory import GetHistoryCommand
 from app.commands.clearHistory import ClearHistoryCommand
+from app.commands.menu import MenuCommand
 from app.commands.exit import ExitCommand
 
 
@@ -34,7 +35,9 @@ class App:
         self.command_handler.register_command("exit", ExitCommand())
         self.command_handler.register_command("getHistory", GetHistoryCommand())
         self.command_handler.register_command("clearHistory", ClearHistoryCommand())
+        self.command_handler.register_command("menu", MenuCommand(self.command_handler))
 
+        self.command_handler.list_commands()
         print("Type 'exit' to exit.")
         while True:  #REPL Read, Evaluate, Print, Loop
             self.command_handler.execute_command(input(">>> ").split())
