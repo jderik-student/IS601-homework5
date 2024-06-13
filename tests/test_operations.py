@@ -4,7 +4,7 @@
 '''
 
 import pytest
-from calculator.operations import add, multiply, subtract, divide
+from app.calculator.operations import add, multiply, subtract, divide
 
 def test_add():
     '''Test that addition function works '''    

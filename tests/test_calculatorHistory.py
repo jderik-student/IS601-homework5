@@ -5,9 +5,9 @@
 
 from decimal import Decimal
 import pytest
-from calculator.calculation import Calculation
-from calculator.calculatorHistory import CalculatorHistory
-from calculator.operations import add, subtract, multiply, divide
+from app.calculator.calculation import Calculation
+from app.calculator.calculatorHistory import CalculatorHistory
+from app.calculator.operations import add, subtract, multiply, divide
 
 @pytest.fixture(name="setup")
 def setup_history():

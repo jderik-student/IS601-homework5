@@ -4,7 +4,7 @@
 '''
 
 import pytest
-from calculator import Calculator
+from app.calculator import Calculator
 
 
 def test_add():

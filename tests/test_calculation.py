@@ -4,8 +4,8 @@
 '''
 
 import pytest
-from calculator.calculation import Calculation
-from calculator.operations import add, divide
+from app.calculator.calculation import Calculation
+from app.calculator.operations import add, divide
 
 def test_operations(a, b, operation, expected):
     """
